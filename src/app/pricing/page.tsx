@@ -251,7 +251,7 @@ export default function PricingPage() {
 
         <div className="mt-5 text-center">
           <a
-            href="#"
+            href="https://alphafrontend.onrender.com/signup"
             className="text-sm font-medium text-blue-600 underline decoration-blue-300 underline-offset-4 transition hover:text-blue-800 hover:decoration-blue-600"
           >
             Sign up as an individual
