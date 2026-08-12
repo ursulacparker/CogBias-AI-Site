@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogs from "../blogs.json";
+import Image from "next/image";
 
 type ContentSection = {
   heading: string;
@@ -19,6 +20,7 @@ type Blog = {
   readTime: string;
   featured: boolean;
   color: string;
+  image: string;
   content: ContentSection[];
 };
 
@@ -105,11 +107,6 @@ export default async function BlogArticlePage({
     notFound();
   }
 
-  const background =
-    blog.color === "violet"
-      ? "from-violet-500 to-fuchsia-600"
-      : "from-blue-500 to-blue-600";
-
   return (
     <main className="min-h-screen bg-white text-black">
       {/* Article heading */}
@@ -161,27 +158,23 @@ export default async function BlogArticlePage({
         </div>
       </section>
 
-      {/* Hero image placeholder */}
+      {/* Hero image */}
       <section className="px-5 sm:px-6 md:px-8 lg:px-10">
-        <div
-          className={`relative mx-auto flex aspect-[16/6] max-w-[900px] items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br ${background}`}
-        >
-          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full border-[30px] border-white/10 sm:h-48 sm:w-48" />
-
-          <div className="absolute -bottom-16 -left-10 h-48 w-48 rounded-full bg-white/10" />
-
-          <div className="absolute left-1/4 top-8 hidden h-14 w-14 rotate-12 rounded-2xl border border-white/20 bg-white/10 sm:block" />
-
-          {/* Replace this area with your article image later */}
-          <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/15 text-white shadow-lg backdrop-blur-sm sm:h-16 sm:w-16">
-            <ArticleIcon />
-          </div>
+        <div className="relative mx-auto aspect-[16/6] max-w-[55%] overflow-hidden rounded-2xl">
+          <Image
+            src={blog.image}
+            alt={blog.title}
+            fill
+            priority
+            sizes="(max-width: 960px) 100vw, 900px"
+            className="object-cover"
+          />
         </div>
       </section>
 
       {/* Article body */}
       <article className="px-5 py-10 sm:px-6 sm:py-12 md:px-8 lg:px-10 lg:py-14">
-        <div className="mx-auto max-w-[700px]">
+        <div className="mx-auto max-w-[54.5%]">
           {blog.content.map((section, index) => (
             <section
               key={section.heading}

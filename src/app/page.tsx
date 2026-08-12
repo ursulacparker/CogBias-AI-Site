@@ -324,7 +324,7 @@ export default function Home() {
 
           <div className="mt-4 flex flex-col justify-center gap-2.5 sm:flex-row">
             <Link
-              href="https://alphafrontend.onrender.com/analysis" target="_blank" rel="noopener noreferrer"
+              href="https://alphafrontend.onrender.com/" target="_blank" rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md sm:px-5 sm:text-sm"
             >
               Try it now!

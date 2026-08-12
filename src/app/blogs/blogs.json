@@ -1,68 +1,110 @@
 [
   {
-    "slug": "designing-better-survey-questions",
-    "title": "Designing Better Survey Questions",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Learn how thoughtful wording can produce clearer and more reliable responses.",
+    "slug": "why-designing-better-survey-questions-matters",
+    "title": "Why designing better survey questions matters",
+    "image": "/blogs/questions.jpg",
+    "excerpt": "Your survey questions may be changing the answers you get. Here's why that matters.",
     "category": "Survey Design",
-    "author": "CogBias Research Team",
-    "publishedAt": "August 8, 2026",
-    "readTime": "6 min read",
+    "author": "CogBias Product Team",
+    "publishedAt": "August 12, 2026",
+    "readTime": "5 min read",
     "featured": true,
-    "color": "indigo",
+    "color": "blue",
     "content": [
       {
-        "heading": "Why question design matters",
+        "heading": "The lasting impact of question wording",
         "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "In 1940, pollsters ran a simple experiment. Half of a national sample was asked whether the United States should forbid public speeches against democracy. Fifty-four percent said yes, forbid them. The other half was asked whether the United States should allow public speeches against democracy, and only 25 percent were willing to allow them, which implies that 75 percent stood opposed. Same policy, same country, same month. The two wordings produced answers roughly twenty points apart. When Howard Schuman and Stanley Presser replicated the experiment in the mid-1970s, the overall numbers had shifted with the times, but the forbid-allow gap was still there. Decades of replication have not made it go away.",
+          "This result is uncomfortable for anyone who treats survey data as a neutral recording of opinion. Respondents do not walk around with fully formed attitudes waiting to be retrieved. For most topics, they construct an answer in the moment, and the raw material for that construction is the question itself: its verbs, its frame, its response options, the questions that came before it. Change the material and you change the answer.",
+          "The evidence on this is old, deep, and consistent. Schuman and Presser found that offering an explicit \"don't know\" option raised the share of uncertain responses on one item from 6.8 percent to 29 percent. Roughly 30 percent of respondents will offer an opinion on entirely fictitious legislation if the question format implies they should have one. Question order matters too: asking about a politically charged item first can move responses to the item that follows by margins large enough to reverse a headline finding. None of this is exotic. It is the ordinary behavior of ordinary people responding to cues embedded in wording."
         ]
       },
       {
-        "heading": "Recognizing subtle influence",
+        "heading": "The business cost of biased questions",
         "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-          "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla."
+          "The practical consequence is that a biased question does not measure the thing you care about. It measures a proxy: the thing you care about, filtered through acquiescence, social desirability, framing, and whatever anchors the question happened to supply. Gartner puts the cost of poor data quality at an average of $12.9 million per organization per year, and survey data that encodes its own distortions is a quiet contributor to that figure, because it looks clean. It arrives in a spreadsheet with decimal points. Nothing about it announces that the instrument shaped the result.",
+          "Our own experimental work makes the size of the effect concrete. In a controlled academic experiment, questions rewritten to remove bias produced responses that aligned with actual behavior 57.3 percent of the time, against 39.4 percent for the original biased versions, a 45 percent improvement in predictive validity (p = .020). In the same program of work, 60 percent of items targeting acquiescence bias showed significant reduction when converted to forced-choice formats. These are not subtle laboratory curiosities. They are the difference between a forecast that tracks behavior and one that tracks wording.",
+          "One finding from our A/B testing deserves particular attention. When we stripped biases out of complex behavioral questions, respondents became significantly more likely to answer \"tie\" or \"undecided.\" At first glance that looks like a loss: the clean questions produced less decisive data. It is the opposite of a loss. Where attitudes are genuinely weak or unformed, a biased question manufactures consensus that does not exist, and the organization downstream spends real money acting on it. An unbiased question captures honest uncertainty, and honest uncertainty is actionable. It tells you where demand is real, where it is soft, and where you are about to build a product for an opinion that a question invented."
         ]
       },
       {
-        "heading": "Building better questions",
+        "heading": "Designing better measurement instruments",
         "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper.",
-          "Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+          "What does better design look like in practice? It starts with treating the questionnaire as a measurement instrument rather than a conversation. Instruments get calibrated. That means running split-ballot tests on wording you are unsure about, the same way Schuman and Presser did, instead of trusting intuition about which phrasing is neutral. It means auditing every item for embedded cues before fielding: anchoring numerals, authority attributions, valence-loaded adjectives, missing midpoints, response options that presuppose an opinion. It means asking about past behavior where possible, because recall of what someone did outperforms speculation about what they would do. And it means preserving the respondent's ability to say they do not know, then treating those answers as findings rather than failures.",
+          "None of this is beyond the reach of a competent research team, but the volume problem is real. A 36-question customer survey can carry dozens of bias instances across many distinct bias types, and human reviewers get tired, disagree, and anchor on the first problem they find. This is why we built detection tooling around a documented catalog of over 229 cognitive biases and a review process that requires evidence for every flag. The tooling matters less than the principle behind it: every question you field is an experiment on your respondents, whether you designed it as one or not. The forbid-allow experiment has been telling us this since 1940. The organizations that listen get data that predicts behavior. The ones that do not get consensus they paid to manufacture."
         ]
       }
     ]
   },
   {
-    "slug": "cognitive-bias-in-product-research",
-    "title": "How Cognitive Bias Shapes Product Research",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explore how hidden assumptions can influence research findings and product decisions.",
-    "category": "Cognitive Bias",
+    "slug": "how-cognitive-bias-shapes-product-research",
+    "title": "How cognitive bias shapes product research",
+    "image": "/blogs/product.jpg",
+    "excerpt": "When research validates the wrong product decisions, the cost is real. Here's how bias affects your bottom line.",
+    "category": "Product Research",
     "author": "CogBias Product Team",
-    "publishedAt": "August 1, 2026",
-    "readTime": "5 min read",
+    "publishedAt": "August 9, 2026",
+    "readTime": "4 min read",
     "featured": false,
-    "color": "violet",
+    "color": "blue",
     "content": [
       {
-        "heading": "Bias begins before the interview",
+        "heading": "When good research measures the wrong thing",
         "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.",
-          "Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+          "Coca-Cola ran nearly 200,000 taste tests before launching New Coke in 1985, at a research cost of about $4 million. The sip tests were well executed and the finding was real: in blind tastings, people preferred the sweeter formula. The launch still became one of the most expensive reversals in marketing history, because the research measured taste preference while purchasing behavior was driven by brand attachment and loss aversion; forces a sip test cannot see. Executives compounded the instrument problem with a judgment problem, discounting the 10 to 12 percent of tasters who reacted with open hostility to the idea of replacing the original. The signal was in the data. Confirmation bias filtered it out.",
+          "The pattern is not rare. McDonald's spent $300 million developing and marketing the Arch Deluxe on research that said customers wanted a premium burger; its core audience did not. Amazon took a $170 million write-down on the Fire Phone. Estimates in the insights industry hold that up to 95 percent of new products miss their revenue or market-share targets, and flawed research is a recurring cause. The uncomfortable explanation is that product research is a psychological transaction between two humans, and cognitive bias operates on both sides of it."
         ]
       },
       {
-        "heading": "From responses to decisions",
+        "heading": "Bias on both sides of the research process",
         "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-          "Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+          "On the respondent's side, the distortions are well documented. Social desirability pushes people toward answers that make them look sensible and virtuous, which is why surveys reliably understate gambling, drinking, and impulse purchases. In our work with FanDuel, we found market research surveys running at 40 to 60 percent reliability, with actual behaviors underestimated by as much as 50 percent, largely because respondents were reporting the self they wanted to present rather than the self that places bets. Acquiescence pushes people toward agreement with whatever is asserted. Framing determines whether the same trade-off reads as a gain or a loss. Hypothetical questions invite answers about an imagined future self who is more patient, healthier, and more willing to pay than the real one. Researchers call the resulting gulf the say-do gap, and it is wide enough that stated purchase intent alone is a poor basis for a launch decision.",
+          "On the researcher's side, the biases are quieter and arguably more damaging, because the researcher writes the instrument. Confirmation bias shapes which questions get asked at all: a team that believes in its roadmap drafts questions that invite validation. A leading question does the persuading before the respondent speaks. The availability heuristic lets one vivid interview quote outweigh thirty contradicting data points, and anchoring lets the first user quoted in the readout set the frame for everyone who reads it. The Nielsen Norman Group's work on why user interviews fail lands on the same underlying problem: people cannot accurately report the causes of their own behavior or predict their future actions, and interviewers who take such reports at face value are collecting fiction with good production values.",
+          "The compounding effect is what makes this dangerous. A biased question produces a distorted answer; a motivated analyst interprets the distortion favorably; a leadership team anchored on the original strategy hears the interpretation as validation. By the time the product ships, the error has passed through three or four hands, each adding confidence and none adding accuracy. The data told them what they wanted to hear. New Coke, the Arch Deluxe, and the Fire Phone all followed this path."
         ]
       },
       {
-        "heading": "Making research more reliable",
+        "heading": "Building more reliable product research",
         "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-          "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus."
+          "The defenses are practical. Ask about past behavior rather than intentions: what someone did last month predicts what they will do next month far better than what they say they will do. Separate discovery research from validation research, and be honest about which one you are running, because a validation study designed by the roadmap's owner will validate. Field instruments only after auditing them for embedded cues, from anchoring numerals to authority claims to response scales with no way to disagree. Where the stakes justify it, run split tests on wording itself and observe behavior directly, through prototypes, pre-orders, and pilots, rather than through attitudes alone.",
+          "Bias auditing also cuts in a direction that surprises most teams: some biases help. When we analyzed 36 post-flight survey questions for Delta Airlines, we identified 85 bias instances across 12 bias types, then recommended eliminating the 17 high-severity instances that corrupted the data while deliberately preserving 23 helpful ones, psychological cues that reduce survey fatigue and keep completion rates up without distorting answers. A blanket purge of everything that touches psychology would have produced a purer instrument that fewer people finish. The judgment call, harmful versus helpful, is exactly the kind generic tooling gets wrong.",
+          "There is also a mindset correction worth making. When we remove biases from research questions, respondents become measurably more likely to say they are undecided. Teams sometimes read this as weaker data. It is better data. A market that is genuinely undecided about your product concept is a fact worth knowing before the capital is committed, and a research process that converts that ambivalence into polite agreement hides the risk until launch day, when it is most expensive to discover. Coca-Cola's tasters could have told the company what would happen. Some of them did. The research just was not built to hear it."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ambiguity-is-the-norm-in-bias-detection",
+    "title": "Ambiguity is the norm",
+    "image": "/blogs/ambiguity.jpg",
+    "excerpt": "Here's what 1,598 expert-labeled statements taught us about bias.",
+    "category": "Bias Detection",
+    "author": "CogBias Product Team",
+    "publishedAt": "August 4, 2026",
+    "readTime": "6 min read",
+    "featured": false,
+    "color": "blue",
+    "content": [
+      {
+        "heading": "What the expert-labeled data revealed",
+        "paragraphs": [
+          "When our expert reviewers labeled a dataset of 1,598 statements for cognitive bias, we expected disagreement at the margins. What we found instead reshaped how we think detection should work: 93.4 percent of statements supported more than one plausible bias label. The average statement carried 2.93 candidate biases. Across 82 distinct bias labels in 12 families, the single-label statement, the clean case where one bias explains the wording and nothing else fits, was the rare exception. Ambiguity was not a defect in the labeling process. It was the most consistent empirical fact about the material.",
+          "A concrete example shows why. Take the phrase \"many financial advisors recommend this allocation.\" An expert reading that sentence cannot honestly assign it a single label. The appeal to advisors is an authority cue. The word \"many\" is a bandwagon cue. If the allocation carries a specific number, that number can anchor every estimate the reader makes afterward. All of these readings are legitimate because they describe the same words operating through different psychological channels, and which channel dominates depends on the reader, the context, and what the surrounding questions have already primed. Language underdetermines mechanism. A sentence is evidence for a bias in the way a symptom is evidence for a disease: real evidence, and rarely conclusive on its own.",
+          "Medicine is the right analogy, and its practitioners settled this methodological question long ago. A clinician presented with chest pain does not announce a single diagnosis and stop. She writes a differential, ranks it by likelihood, and orders the test that discriminates between the leading candidates. The differential is what makes the reasoning auditable; a colleague can look at the list and argue with the ranking. A diagnosis delivered without one is an assertion, whatever its confidence."
+        ]
+      },
+      {
+        "heading": "Why disagreement is meaningful",
+        "paragraphs": [
+          "The machine-learning field has been arriving at the same conclusion from another direction. A growing body of NLP research on subjective annotation tasks argues that annotator disagreement is signal rather than noise: when trained labelers diverge on a hate-speech judgment or a sentiment rating, the divergence often encodes real properties of the text and real variation in how populations read it and collapsing it into a majority vote destroys information. Some of that work goes further, showing cases where the minority reading is the correct one and majority-vote aggregation systematically erases it. Our expert data says the same thing about bias. When two reviewers assign different labels to a statement, the productive question is what each of them saw, and the answer is usually that both cues are present.",
+          "This finding has sharp consequences for how detection tools should behave, including ours. A system that returns one bias label with one confidence score is presenting a differential-shaped problem in a verdict-shaped box, and the mismatch misrepresents how the experts who trained it actually reason. So, we hold our own output to requirements derived from the labeled data. A detection must cite the exact span of wording that supports it, because evidence that cannot point at anything is opinion. It must surface the competing labels consistent with the same cue, because 93.4 percent of the time those competitors exist. It must actively search for counter-evidence, including the plausible benign reading of the same sentence, because a tool built to detect confirmation bias should not itself exhibit confirmation bias. And its confidence language must stay calibrated: may, can, tends to. A wording choice can make a bias more likely to fire in a population of readers. Certainty about any single reader is not on offer, and a tool that claims it is overclaiming."
+        ]
+      },
+      {
+        "heading": "Analyzing effects instead of intentions",
+        "paragraphs": [
+          "One more regularity in the expert data is worth reporting. Across all 1,598 statements, every expert rationale, without exception, described the effect of the wording on the person receiving it: the reader may feel implicit pressure to agree, the phrasing prompts the respondent to weigh prior investments. None of them made claims about what the author intended. This was not an instruction we gave the reviewers; it is how careful analysts naturally talk about bias when they are being precise, because intent is unobservable from text and effect is what matters for measurement. The same sentence can arrive in a survey through carelessness, convention, or design, and its effect on respondents is identical in each case.",
+          "For teams that rely on survey and research data, the practical takeaway is a change in what to expect from analysis, human or automated. Distrust the single confident verdict, whoever produces it, and ask for the differential instead: which cues are present in this wording, which biases could each cue activate, what would distinguish between them, and what the case against the flag looks like. An analysis that can answer those questions is one you can argue with, and an analysis you can argue with is the only kind worth paying for. The statements in our dataset did not become ambiguous when the experts labeled them. They were ambiguous all along. The labeling just made it visible."
         ]
       }
     ]

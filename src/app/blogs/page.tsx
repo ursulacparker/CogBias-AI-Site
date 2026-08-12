@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import blogs from "./blogs.json";
+import Image from "next/image";
 
 type Blog = {
   slug: string;
@@ -13,6 +14,7 @@ type Blog = {
   readTime: string;
   featured: boolean;
   color: string;
+  image: string;
 };
 
 function ArrowIcon() {
@@ -27,31 +29,6 @@ function ArrowIcon() {
         d="M4 10h11M11 6l4 4-4 4"
         stroke="currentColor"
         strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function ArticleIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className="h-7 w-7"
-      aria-hidden="true"
-    >
-      <path
-        d="M6 3h9l4 4v14H6V3Z"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M15 3v5h4M9 12h7M9 16h7"
-        stroke="currentColor"
-        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -86,33 +63,33 @@ function ClockIcon() {
 }
 
 function BlogArtwork({
-  color,
+  image,
+  title,
   compact = false,
 }: {
-  color: string;
+  image: string;
+  title: string;
   compact?: boolean;
 }) {
-  const background =
-    color === "violet"
-      ? "from-violet-500 to-fuchsia-600"
-      : "from-blue-500 to-blue-600";
-
   return (
     <div
-      className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br ${background} ${
-        compact ? "aspect-[16/9]" : "min-h-[220px] sm:min-h-[250px] lg:min-h-full"
+      className={`relative overflow-hidden ${
+        compact
+          ? "aspect-[16/9]"
+          : "min-h-[220px] sm:min-h-[250px] lg:min-h-full"
       }`}
     >
-      <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full border-[22px] border-white/10" />
-
-      <div className="absolute -bottom-10 -left-8 h-32 w-32 rounded-full bg-white/10 blur-sm" />
-
-      <div className="absolute left-8 top-6 h-10 w-10 rotate-12 rounded-xl border border-white/20 bg-white/10" />
-
-      {/* Replace this icon area with a Next.js Image later */}
-      <div className="relative flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 bg-white/15 text-white shadow-lg backdrop-blur-sm sm:h-14 sm:w-14">
-        <ArticleIcon />
-      </div>
+      <Image
+        src={image}
+        alt={title}
+        fill
+        sizes={
+          compact
+            ? "(max-width: 640px) 40vw, (max-width: 1024px) 50vw, 320px"
+            : "(max-width: 768px) 100vw, 45vw"
+        }
+        className="object-cover transition duration-500 group-hover:scale-105"
+      />
     </div>
   );
 }
@@ -161,7 +138,10 @@ export default function BlogsPage() {
             href={`/blogs/${featuredBlog.slug}`}
             className="group grid overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg md:grid-cols-[0.9fr_1.1fr]"
           >
-            <BlogArtwork color={featuredBlog.color} />
+            <BlogArtwork
+              image={featuredBlog.image}
+              title={featuredBlog.title}
+            />
 
             <div className="flex flex-col justify-center p-5 sm:p-6 lg:p-8">
               <div className="flex flex-wrap items-center gap-2.5">
@@ -217,11 +197,6 @@ export default function BlogsPage() {
                 More from CogBias
               </h2>
             </div>
-
-            <p className="max-w-sm text-sm leading-6 text-slate-600">
-              Research, practical guidance, and new ways to think about the
-              questions we ask.
-            </p>
           </div>
 
           {remainingBlogs.length > 0 ? (
@@ -233,7 +208,10 @@ export default function BlogsPage() {
                   className="group flex overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-md sm:block"
                 >
                   <div className="w-2/5 shrink-0 sm:w-auto">
-                    <BlogArtwork color={blog.color} compact />
+                    <BlogArtwork
+                      image={featuredBlog.image}
+                      title={featuredBlog.title}
+                    />
                   </div>
 
                   <div className="flex flex-1 flex-col p-4">
