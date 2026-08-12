@@ -1,0 +1,374 @@
+[
+  {
+    "slug": "consumer-insights",
+    "eyebrow": "CogBias for Consumer Insights",
+    "headline": "Understand what consumers really mean.",
+    "highlight": "Not just what they say.",
+    "subtitle": "Identify hidden bias in consumer surveys, improve question wording, and collect insights your team can confidently act on.",
+    "audience": "Consumer insights teams",
+    "painPoint": {
+      "eyebrow": "The challenge",
+      "title": "Small wording choices can create expensive conclusions.",
+      "description": "When surveys unintentionally guide participants toward an answer, apparent consumer demand may not reflect real buying behavior.",
+      "items": [
+        {
+          "title": "Inflated interest",
+          "description": "Leading questions can make consumers appear more enthusiastic than they really are.",
+          "icon": "trend"
+        },
+        {
+          "title": "Unreliable segmentation",
+          "description": "Biased responses can distort the preferences attributed to different customer groups.",
+          "icon": "people"
+        },
+        {
+          "title": "Risky decisions",
+          "description": "Teams may invest in campaigns or products based on signals their questions helped create.",
+          "icon": "warning"
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "From survey to signal",
+      "title": "Turn consumer feedback into clearer evidence.",
+      "description": "CogBias reviews survey wording before launch so your team can distinguish genuine consumer sentiment from question-driven noise.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Detect",
+          "description": "Find leading language, framing effects, social desirability pressure, and other cognitive biases."
+        },
+        {
+          "number": "02",
+          "title": "Improve",
+          "description": "Receive neutral alternatives that preserve your research goal without steering the participant."
+        },
+        {
+          "number": "03",
+          "title": "Decide",
+          "description": "Use more dependable consumer evidence to guide positioning, segmentation, and strategy."
+        }
+      ]
+    },
+    "outcomes": [
+      "More reliable concept and message testing",
+      "Clearer consumer preference data",
+      "Greater confidence in purchasing-intent signals",
+      "More defensible recommendations for stakeholders"
+    ],
+    "cta": {
+      "title": "Consumer insight starts with better questions.",
+      "description": "Review your survey questions with CogBias before they reach your consumers."
+    }
+  },
+  {
+    "slug": "academic-students",
+    "eyebrow": "CogBias for Student Researchers",
+    "headline": "Build a stronger survey.",
+    "highlight": "Strengthen your research.",
+    "subtitle": "Get clear guidance on cognitive bias and question wording before collecting data for your class project, thesis, or dissertation.",
+    "audience": "Students conducting survey research",
+    "painPoint": {
+      "eyebrow": "The challenge",
+      "title": "Your results are only as reliable as the questions behind them.",
+      "description": "Even a well-designed study can be weakened by questions that lead participants, combine multiple ideas, or encourage socially desirable answers.",
+      "items": [
+        {
+          "title": "Hidden bias",
+          "description": "Survey bias can be difficult to recognize when you are deeply familiar with your topic.",
+          "icon": "search"
+        },
+        {
+          "title": "Unclear questions",
+          "description": "Loaded, ambiguous, or double-barreled wording can make responses difficult to interpret.",
+          "icon": "question"
+        },
+        {
+          "title": "Limited feedback",
+          "description": "Students may not receive detailed survey feedback until late in the research process.",
+          "icon": "clock"
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "A research assistant for your questions",
+      "title": "Improve your instrument before data collection begins.",
+      "description": "CogBias helps you understand what may be influencing a question and gives you actionable ways to improve it.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Review",
+          "description": "Analyze each survey question for cognitive bias and common wording problems."
+        },
+        {
+          "number": "02",
+          "title": "Learn",
+          "description": "See explanations that help you understand why a particular question may affect responses."
+        },
+        {
+          "number": "03",
+          "title": "Revise",
+          "description": "Compare suggested alternatives and select the wording that best supports your research objective."
+        }
+      ]
+    },
+    "outcomes": [
+      "A clearer and more defensible survey instrument",
+      "Better understanding of survey methodology",
+      "Fewer avoidable issues during faculty review",
+      "Greater confidence before recruitment begins"
+    ],
+    "cta": {
+      "title": "Give your research a stronger foundation.",
+      "description": "Find and improve potentially biased survey questions before collecting your data."
+    }
+  },
+  {
+    "slug": "academic-researchers",
+    "eyebrow": "CogBias for Academic Research",
+    "headline": "Protect research quality",
+    "highlight": "at the question level.",
+    "subtitle": "Systematically identify cognitive bias in survey instruments and create clearer questions for rigorous, reproducible research.",
+    "audience": "Professors and professional researchers",
+    "painPoint": {
+      "eyebrow": "The challenge",
+      "title": "Instrument bias can quietly influence an entire study.",
+      "description": "Subtle framing and wording effects can alter participant responses, complicate interpretation, and weaken the validity of otherwise rigorous work.",
+      "items": [
+        {
+          "title": "Researcher assumptions",
+          "description": "Domain expertise can make unintended assumptions in question wording harder to notice.",
+          "icon": "search"
+        },
+        {
+          "title": "Inconsistent review",
+          "description": "Manual instrument review may vary across researchers, labs, and projects.",
+          "icon": "document"
+        },
+        {
+          "title": "Downstream consequences",
+          "description": "Question-level problems may surface only after recruitment and data collection are complete.",
+          "icon": "warning"
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "Systematic instrument review",
+      "title": "Add a consistent bias check to your methodology.",
+      "description": "CogBias supports researchers with structured detection, contextual explanations, and revision recommendations.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Analyze",
+          "description": "Evaluate questions against a structured knowledge base of cognitive biases and survey-design risks."
+        },
+        {
+          "number": "02",
+          "title": "Validate",
+          "description": "Review bias classifications, explanations, and potential effects in the context of your research goal."
+        },
+        {
+          "number": "03",
+          "title": "Document",
+          "description": "Use improved wording and consistent review practices across researchers, instruments, and studies."
+        }
+      ]
+    },
+    "outcomes": [
+      "More consistent instrument-development workflows",
+      "Clearer justification for wording decisions",
+      "Reduced risk of preventable response bias",
+      "Stronger survey validity and reproducibility"
+    ],
+    "cta": {
+      "title": "Bring structured bias detection into your research workflow.",
+      "description": "Improve survey questions without losing the intent of your study."
+    }
+  },
+  {
+    "slug": "ux-research",
+    "eyebrow": "CogBias for UX Research",
+    "headline": "Ask without leading.",
+    "highlight": "Learn without guessing.",
+    "subtitle": "Design research questions that uncover how users actually think, behave, and experience your product.",
+    "audience": "UX researchers and design teams",
+    "painPoint": {
+      "eyebrow": "The challenge",
+      "title": "Users often tell us what our questions invite them to say.",
+      "description": "When a team is invested in a design, assumptions can enter interview prompts and surveys without anyone noticing.",
+      "items": [
+        {
+          "title": "Confirmation bias",
+          "description": "Questions may search for support for an existing design instead of testing it openly.",
+          "icon": "check"
+        },
+        {
+          "title": "Positive framing",
+          "description": "Product language can encourage participants to evaluate an experience more favorably.",
+          "icon": "message"
+        },
+        {
+          "title": "Polite responses",
+          "description": "Participants may soften criticism when questions create social pressure or signal a preferred answer.",
+          "icon": "people"
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "Research with fewer assumptions",
+      "title": "Make space for honest user feedback.",
+      "description": "CogBias helps UX teams uncover leading language and rephrase questions while preserving the learning objective.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Detect assumptions",
+          "description": "Find language that presupposes success, satisfaction, usefulness, or a particular user behavior."
+        },
+        {
+          "number": "02",
+          "title": "Rephrase neutrally",
+          "description": "Turn validation-focused prompts into open questions that welcome positive and negative feedback."
+        },
+        {
+          "number": "03",
+          "title": "Share better evidence",
+          "description": "Bring stakeholders findings that more accurately represent the user experience."
+        }
+      ]
+    },
+    "outcomes": [
+      "More candid usability feedback",
+      "Fewer validation-focused questions",
+      "Clearer evidence for design decisions",
+      "More trustworthy stakeholder readouts"
+    ],
+    "cta": {
+      "title": "Let users tell you what you did not expect.",
+      "description": "Use CogBias to create more neutral UX research questions."
+    }
+  },
+  {
+    "slug": "product-managers",
+    "eyebrow": "CogBias for Product Managers",
+    "headline": "Validate the opportunity.",
+    "highlight": "Not the assumption.",
+    "subtitle": "Improve discovery questions before biased feedback turns into roadmap commitments, wasted development, or false confidence.",
+    "audience": "Product managers and product teams",
+    "painPoint": {
+      "eyebrow": "The challenge",
+      "title": "A convincing survey result is not always a reliable product signal.",
+      "description": "Teams can unintentionally frame questions around the solution they want to build, producing evidence that appears to validate an existing idea.",
+      "items": [
+        {
+          "title": "False validation",
+          "description": "Leading questions can transform tentative interest into what looks like strong product demand.",
+          "icon": "check"
+        },
+        {
+          "title": "Roadmap risk",
+          "description": "Biased evidence can move low-value ideas ahead of more meaningful customer problems.",
+          "icon": "roadmap"
+        },
+        {
+          "title": "Expensive rework",
+          "description": "Weak discovery may not become visible until after design and engineering resources are committed.",
+          "icon": "warning"
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "Better product discovery",
+      "title": "Pressure-test the question before trusting the answer.",
+      "description": "CogBias helps product teams separate customer evidence from the assumptions embedded in their research.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Find bias",
+          "description": "Identify questions that assume a problem, promote a solution, or exaggerate purchase intent."
+        },
+        {
+          "number": "02",
+          "title": "Preserve the goal",
+          "description": "Rephrase questions without losing the product decision or hypothesis your team needs to investigate."
+        },
+        {
+          "number": "03",
+          "title": "Prioritize confidently",
+          "description": "Use clearer evidence when evaluating opportunities and making roadmap decisions."
+        }
+      ]
+    },
+    "outcomes": [
+      "More trustworthy product-discovery evidence",
+      "Stronger opportunity validation",
+      "Reduced risk of false-positive demand",
+      "Better-informed roadmap prioritization"
+    ],
+    "cta": {
+      "title": "Build from customer evidence—not question bias.",
+      "description": "Improve your discovery questions before they influence your roadmap."
+    }
+  },
+  {
+    "slug": "sales-discovery",
+    "eyebrow": "CogBias for Sales Discovery",
+    "headline": "Separate buyer intent",
+    "highlight": "from sales influence.",
+    "subtitle": "Ask discovery questions that uncover genuine customer needs without creating artificial agreement, urgency, or purchase intent.",
+    "audience": "Sales and revenue teams",
+    "painPoint": {
+      "eyebrow": "The challenge",
+      "title": "A positive conversation does not always mean purchase intent.",
+      "description": "Customers may agree with persuasive framing, answer politely, or respond to the seller’s enthusiasm without revealing what they will actually buy.",
+      "items": [
+        {
+          "title": "Artificial agreement",
+          "description": "Leading questions can make prospects appear more aligned with the proposed solution.",
+          "icon": "message"
+        },
+        {
+          "title": "Overstated intent",
+          "description": "Hypothetical enthusiasm may be mistaken for urgency, budget, or willingness to purchase.",
+          "icon": "trend"
+        },
+        {
+          "title": "Weak qualification",
+          "description": "Teams may prioritize accounts using intent signals their own questions helped produce.",
+          "icon": "target"
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "More reliable discovery",
+      "title": "Keep the commercial goal. Improve the signal.",
+      "description": "CogBias helps sales teams recognize when persuasion is distorting discovery and suggests questions that reveal authentic buyer priorities.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Detect influence",
+          "description": "Find leading, loaded, assumptive, and socially pressuring language in discovery questions."
+        },
+        {
+          "number": "02",
+          "title": "Rephrase",
+          "description": "Preserve sales context while giving the buyer space to disagree, deprioritize, or identify a different need."
+        },
+        {
+          "number": "03",
+          "title": "Qualify accurately",
+          "description": "Base follow-up, forecasting, and account prioritization on clearer buyer evidence."
+        }
+      ]
+    },
+    "outcomes": [
+      "More authentic customer-discovery conversations",
+      "Clearer problem and priority signals",
+      "More realistic buyer-intent assessment",
+      "Better-informed qualification and follow-up"
+    ],
+    "cta": {
+      "title": "Discover what buyers need—not what they will agree to.",
+      "description": "Use CogBias to improve the questions behind your sales decisions."
+    }
+  }
+]

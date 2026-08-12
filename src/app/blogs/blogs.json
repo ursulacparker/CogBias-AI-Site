@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "designing-better-survey-questions",
+    "title": "Designing Better Survey Questions",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Learn how thoughtful wording can produce clearer and more reliable responses.",
+    "category": "Survey Design",
+    "author": "CogBias Research Team",
+    "publishedAt": "August 8, 2026",
+    "readTime": "6 min read",
+    "featured": true,
+    "color": "indigo",
+    "content": [
+      {
+        "heading": "Why question design matters",
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ]
+      },
+      {
+        "heading": "Recognizing subtle influence",
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla."
+        ]
+      },
+      {
+        "heading": "Building better questions",
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper.",
+          "Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cognitive-bias-in-product-research",
+    "title": "How Cognitive Bias Shapes Product Research",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explore how hidden assumptions can influence research findings and product decisions.",
+    "category": "Cognitive Bias",
+    "author": "CogBias Product Team",
+    "publishedAt": "August 1, 2026",
+    "readTime": "5 min read",
+    "featured": false,
+    "color": "violet",
+    "content": [
+      {
+        "heading": "Bias begins before the interview",
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+          "Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+        ]
+      },
+      {
+        "heading": "From responses to decisions",
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+          "Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+        ]
+      },
+      {
+        "heading": "Making research more reliable",
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+          "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus."
+        ]
+      }
+    ]
+  }
+]
