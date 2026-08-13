@@ -284,7 +284,7 @@ export default async function PersonaLandingPage({
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="https://alphafrontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                href="https://extension.staging.cogbias.ai/" target="_blank" rel="noopener noreferrer"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md"
               >
                 Download now

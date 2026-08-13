@@ -127,11 +127,10 @@ export default function Navbar() {
         {/* Right section: desktop download button */}
         <div className="hidden justify-end md:flex">
           <Link
-            href="https://alphafrontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+            href="https://forms.gle/8TDh59hTrcgJyWud7" target="_blank" rel="noopener noreferrer"
             className="group flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md"
           >
-            <DownloadIcon />
-            Download
+            Request a Demo
           </Link>
         </div>
 

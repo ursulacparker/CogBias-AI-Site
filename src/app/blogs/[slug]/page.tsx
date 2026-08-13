@@ -212,10 +212,10 @@ export default async function BlogArticlePage({
             </p>
 
             <Link
-              href="https://alphafrontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+              href="https://forms.gle/8TDh59hTrcgJyWud7" target="_blank" rel="noopener noreferrer"
               className="mt-5 inline-flex rounded-xl bg-blue-600 px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-blue-700 sm:text-sm"
             >
-              Download the extension
+              Request a Demo!
             </Link>
           </div>
         </div>

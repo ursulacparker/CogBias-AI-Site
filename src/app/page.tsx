@@ -324,7 +324,7 @@ export default function Home() {
 
           <div className="mt-4 flex flex-col justify-center gap-2.5 sm:flex-row">
             <Link
-              href="https://alphafrontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+              href="https://extension.staging.cogbias.ai/" target="_blank" rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md sm:px-5 sm:text-sm"
             >
               Try it now!
@@ -503,10 +503,10 @@ export default function Home() {
 
             <div className="mt-4 flex flex-col justify-center gap-2.5 sm:flex-row">
               <Link
-                href="https://alphafrontend.onrender.com/" target="_blank" rel="noopener noreferrer"
+                href="https://forms.gle/8TDh59hTrcgJyWud7/" target="_blank" rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md sm:text-sm"
               >
-                Download the extension
+                Request a Demo!
                 <Icon
                   name="arrow"
                   className="h-3.5 w-3.5 transition group-hover:translate-x-1"

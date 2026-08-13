@@ -2,78 +2,93 @@
 
 const plans = [
   {
-    name: "Startup / Nonprofit",
+    name: "Individual / Student",
     description:
-      "For early-stage startups and mission-driven organizations.",
-    price: "Custom",
+      "For individuals and students who want to identify and improve bias in their work.",
+    price: "$20/month",
+    icon: "individual",
+    features: [
+      "Bias detection, scoring, and rephrasing",
+      "Email support",
+    ],
+  },
+  {
+    name: "Startup",
+    description:
+      "For early-stage teams building more thoughtful, effective products and research.",
+    price: "Contact us",
     icon: "rocket",
     features: [
-      "Bias detection for survey questions",
-      "Presence scoring",
-      "Top-K explanations",
-      "Basic reporting",
+      "Bias detection, scoring, and rephrasing",
+      "Collaboration for up to 10 seats",
+      "Reporting and analysis tools",
       "Email support",
-      "Flexible analysis limits",
     ],
   },
   {
     name: "Enterprise",
     description:
-      "For organizations with custom deployment and compliance needs.",
-    price: "Custom",
+      "For organizations that need powerful, scalable bias analysis across their teams and workflows.",
+    price: "Contact us",
     icon: "enterprise",
     recommended: true,
     features: [
-      "Everything in Academic",
-      "Custom deployment options",
-      "Security review",
-      "API access",
-      "SSO / SAML",
-      "Audit logs",
-      "Data processing agreement",
-      "Dedicated support",
-      "Custom integrations",
-      "SLA guarantees",
+      "Advanced bias detection, scoring, and rephrasing",
+      "Organization-wide analysis and collaboration",
+      "Secure, scalable workflow integrations",
+      "Custom-built solutions and integrations",
+      "Real-time support",
+      "Early access to new products",
+      "Custom reports, analysis, training, and configurable admin portal",
     ],
   },
   {
     name: "Academic",
     description:
-      "For researchers and academic teams conducting survey-based studies.",
-    price: "Custom",
+      "For researchers and academic teams conducting rigorous, survey-based studies.",
+    price: "Contact us",
     icon: "academic",
     features: [
-      "Everything in Startup / Nonprofit",
-      "Expanded analysis limits",
-      "Research team collaboration",
-      "Advanced reporting",
-      "Workflow support",
-      "Onboarding session",
-      "Priority support",
-      "Custom bias prioritization",
+      "Research-focused bias detection, scoring, and rephrasing",
+      "Advanced analysis for survey questions and research workflows",
+      "Priority research support",
     ],
   },
 ];
 
-const contactEmail = "hello@cogbias.com";
-
-function createContactLink(planName: string) {
-  const subject = `${planName}: CogBias Pricing Inquiry`;
-
-  const body = `Hi CogBias team,
-
-I'm interested in learning more about the ${planName} plan!`;
-
-  return `mailto:${contactEmail}?subject=${encodeURIComponent(
-    subject,
-  )}&body=${encodeURIComponent(body)}`;
-}
+const individualSignupLink = "https://extension.staging.cogbias.ai";
+const demoLink = "https://forms.gle/8TDh59hTrcgJyWud7";
 
 type PlanIconProps = {
   type: string;
 };
 
 function PlanIcon({ type }: PlanIconProps) {
+  if (type === "individual") {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        className="h-5 w-5"
+        aria-hidden="true"
+      >
+        <circle
+          cx="12"
+          cy="8"
+          r="3.5"
+          stroke="currentColor"
+          strokeWidth="1.8"
+        />
+        <path
+          d="M5.5 20c.5-4 2.7-6 6.5-6s6 2 6.5 6"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
+
   if (type === "rocket") {
     return (
       <svg
@@ -192,70 +207,74 @@ function ArrowIcon() {
 export default function PricingPage() {
   return (
     <main className="min-h-[calc(100dvh-5rem)] bg-white px-5 py-5 text-black sm:px-6 md:px-8 lg:px-10">
-      <div className="mx-auto w-full max-w-[1100px]">
-        <h1 className="text-center text-5xl font-medium tracking-tight mt-5 pb-2">
-          Our Team Pricing
-        </h1>
+      <div className="mx-auto w-full max-w-[1400px]">
+        <div className="mx-auto max-w-2xl text-center pb-2">
 
-        <div className="mt-7 grid items-stretch gap-4 md:grid-cols-3 lg:gap-5">
-          {plans.map((plan) => (
-            <article
-              key={plan.name}
-              className={`relative flex flex-col rounded-2xl bg-white p-5 ${
-                plan.recommended
-                  ? "border-2 border-blue-600 shadow-[0_6px_18px_rgba(79,70,229,0.13)]"
-                  : "border border-zinc-300 shadow-sm"
-              }`}
-            >
-              {plan.recommended && (
-                <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-4 py-0.5 text-[10px] font-semibold text-white">
-                  Recommended
-                </div>
-              )}
+            <h1 className="mt-4 text-5xl font-medium tracking-tight">
+              Our Team Pricing
+            </h1>
 
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
-                <PlanIcon type={plan.icon} />
-              </div>
+            <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base sm:leading-7">
+              Choose the right plan to detect, measure, and transform bias at any scale.
+            </p>
+          </div>
 
-              <h2 className="mt-3 text-lg font-bold">{plan.name}</h2>
+        <div className="mt-7 grid items-stretch gap-4 md:grid-cols-2 xl:grid-cols-4 lg:gap-5 lg:px-10">
+          {plans.map((plan) => {
+            const isIndividual = plan.icon === "individual";
 
-              <p className="mt-1.5 min-h-[40px] text-xs leading-5 text-slate-600">
-                {plan.description}
-              </p>
-
-              <p className="mt-3 text-2xl font-bold">{plan.price}</p>
-
-              <a
-                href={createContactLink(plan.name)}
-                className={`mt-3 flex h-9 w-full items-center justify-center gap-2 rounded-lg border text-xs font-medium transition ${
+            return (
+              <article
+                key={plan.name}
+                className={`relative flex flex-col rounded-2xl bg-white p-5 ${
                   plan.recommended
-                    ? "border-black bg-black text-white hover:bg-zinc-800"
-                    : "border-zinc-300 bg-white text-black hover:border-blue-300 hover:bg-blue-50"
+                    ? "border-2 border-blue-600 shadow-[0_6px_18px_rgba(79,70,229,0.13)]"
+                    : "border border-zinc-300 shadow-sm"
                 }`}
               >
-                Contact Us
-                <ArrowIcon />
-              </a>
+                {plan.recommended && (
+                  <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-4 py-0.5 text-[10px] font-semibold text-white">
+                    Recommended
+                  </div>
+                )}
 
-              <ul className="mt-5 space-y-2 text-xs leading-4 text-slate-600">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2">
-                    <CheckIcon />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
+                  <PlanIcon type={plan.icon} />
+                </div>
 
-        <div className="mt-5 text-center">
-          <a
-            href="https://alphafrontend.onrender.com/signup"
-            className="text-sm font-medium text-blue-600 underline decoration-blue-300 underline-offset-4 transition hover:text-blue-800 hover:decoration-blue-600"
-          >
-            Sign up as an individual
-          </a>
+                <h2 className="mt-3 text-lg font-bold">{plan.name}</h2>
+
+                <p className="mt-1.5 min-h-[60px] text-xs leading-5 text-slate-600">
+                  {plan.description}
+                </p>
+
+                <p className="mt-3 text-2xl font-bold">{plan.price}</p>
+
+                <a
+                  href={isIndividual ? individualSignupLink : demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`mt-3 flex h-9 w-full items-center justify-center gap-2 rounded-lg border text-xs font-medium transition ${
+                    plan.recommended
+                      ? "border-black bg-black text-white hover:bg-zinc-800"
+                      : "border-zinc-300 bg-white text-black hover:border-blue-300 hover:bg-blue-50"
+                  }`}
+                >
+                  {isIndividual ? "Get Started" : "Contact Us"}
+                  <ArrowIcon />
+                </a>
+
+                <ul className="mt-5 space-y-2 text-xs leading-4 text-slate-600">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-2">
+                      <CheckIcon />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
         </div>
       </div>
     </main>
