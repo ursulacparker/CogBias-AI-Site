@@ -29,6 +29,10 @@ const partners = [
     name: "Product Coffee",
     image: "/partners/product_coffee.png",
   },
+  {
+    name: "NVIDIA Inception Program",
+    image: "/partners/nvidia.png",
+  },
 ];
 
 type IconProps = {

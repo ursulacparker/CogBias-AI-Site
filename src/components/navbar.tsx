@@ -180,13 +180,11 @@ export default function Navbar() {
 
           <div className="pt-3">
             <Link
-              href="/download"
-              onClick={() => setMenuOpen(false)}
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 font-semibold text-white shadow-sm transition hover:bg-blue-700"
-            >
-              <DownloadIcon />
-              Download the extension
-            </Link>
+            href="https://forms.gle/8TDh59hTrcgJyWud7" target="_blank" rel="noopener noreferrer"
+            className="group flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md"
+          >
+            Request a Demo
+          </Link>
           </div>
         </div>
       </div>

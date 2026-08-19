@@ -1,4 +1,5 @@
 // src/app/product/page.tsx
+import {InteractiveMapCard} from "../../components/InteractiveMapCard";
 
 const biases = [
   {
@@ -383,8 +384,8 @@ export default function ProductPage() {
             </h2>
 
             <p className="mt-3 text-sm text-slate-600 sm:text-base">
-              A structured pipeline that turns raw survey questions into
-              actionable recommendations.
+              A structured pipeline that transforms raw survey questions into actionable 
+              recommendations using our <b>patent-pending</b> technology.
             </p>
           </div>
 
@@ -419,30 +420,7 @@ export default function ProductPage() {
               </ol>
             </div>
 
-            <div className="flex min-h-[260px] w-full flex-col items-center justify-center bg-gradient-to-br from-zinc-100 to-zinc-200 px-4 py-6 text-center sm:min-h-[300px] sm:px-6 sm:py-8 lg:min-h-full">
-              <div className="w-full max-w-[480px] overflow-hidden rounded-xl sm:rounded-2xl">
-                <img
-                  src="/mind_map.png"
-                  alt="CogBias proprietary cognitive-bias knowledge graph"
-                  className="h-auto max-h-[42vh] w-full object-contain sm:max-h-[46vh] lg:max-h-[50vh]"
-                />
-              </div>
-
-              <div className="mt-4 w-full max-w-md sm:mt-5">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-blue-600 sm:text-xs sm:tracking-[0.16em]">
-                  Built for CogBias
-                </p>
-
-                <p className="mt-1.5 text-sm font-semibold leading-5 text-slate-900 sm:text-base sm:leading-6">
-                  Our proprietary model cognitive-bias knowledge graph
-                </p>
-
-                <p className="mx-auto mt-1.5 text-xs leading-5 text-slate-600 sm:text-sm sm:leading-6">
-                  A structured network that helps our AI understand relationships between
-                  biases, question patterns, and their potential effects.
-                </p>
-              </div>
-            </div>
+            <InteractiveMapCard />
 
           </div>
         </div>
